@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description" content="可编辑的透明玻璃立方体动态首屏" />
+    <link rel="icon" href="data:," />
+    <title>Glass Cube Hero</title>
+    <script type="module" crossorigin src="./assets/index-u2r6kCGe.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-jRwM_9c_.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" id="hero" aria-labelledby="accessible-headline">
+        <h1 class="sr-only" id="accessible-headline">Explore New Ideas</h1>
+
+        <header class="site-header">
+          <div class="brand" id="brand-link">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span id="brand-text">Design World</span>
+          </div>
+
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span></span><span></span>
+            <span class="sr-only">打开导航</span>
+          </button>
+
+          <nav class="site-nav" id="site-nav" aria-label="主导航">
+            <div class="pdf-nav-item">
+              <span class="contact-bouncy-arrow" aria-hidden="true">
+                <svg viewBox="0 0 42 20"><path d="M2 10h34M29 3l7 7-7 7" /></svg>
+              </span>
+              <button class="pdf-nav-trigger" id="pdf-nav-trigger" type="button">View PDF</button>
+            </div>
+            <div class="contact-nav-item" id="contact-nav-item">
+              <span class="contact-bouncy-arrow" aria-hidden="true">
+                <svg viewBox="0 0 42 20"><path d="M2 10h34M29 3l7 7-7 7" /></svg>
+              </span>
+              <a id="nav-2" href="#contact">Contact Us</a>
+              <div class="contact-preview" id="contact-preview" aria-hidden="true">
+                <img id="contact-preview-image" alt="" />
+                <span id="contact-preview-placeholder">上传图片</span>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="scene-layer" id="scene-layer" aria-hidden="true">
+          <canvas id="webgl-canvas"></canvas>
+          <div class="fallback-cube">
+            <span class="fallback-face fallback-front"></span>
+            <span class="fallback-face fallback-back"></span>
+            <span class="fallback-face fallback-left"></span>
+            <span class="fallback-face fallback-right"></span>
+            <span class="fallback-face fallback-top"></span>
+            <span class="fallback-face fallback-bottom"></span>
+          </div>
+        </div>
+
+        <div class="tagline" aria-label="介绍文案">
+          <span id="tagline-text">Let's Build the<br />Future of</span>
+          <strong id="tagline-highlight">Design.</strong>
+        </div>
+
+        <div class="hero-index" id="hero-index" aria-hidden="true">07</div>
+</section>
+
+      <section class="projects-section" id="portfolio" aria-labelledby="projects-heading">
+        <div class="projects-heading-wrap">
+          <p class="projects-kicker">SELECTED PROJECTS</p>
+          <h2 id="projects-heading">Project Gallery</h2>
+        </div>
+
+        <div class="coverflow" id="projects-carousel" role="region" aria-roledescription="carousel" aria-label="项目图片轮播">
+          <button class="carousel-arrow carousel-arrow-left" id="carousel-prev" type="button" aria-label="上一张图片">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <div class="coverflow-frame" id="coverflow-frame" tabindex="0">
+            <div class="coverflow-stage" id="coverflow-stage"></div>
+          </div>
+          <button class="carousel-arrow carousel-arrow-right" id="carousel-next" type="button" aria-label="下一张图片">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
+        </div>
+
+        <div class="project-caption" id="project-caption" aria-live="polite">
+          <p class="project-name" id="project-name">项目名称</p>
+          <p class="project-description" id="project-description">项目详细说明文字</p>
+        </div>
+
+        <div class="project-full-preview" id="project-full-preview" aria-hidden="true">
+          <img id="project-full-preview-image" alt="" />
+        </div>
+</section>
+
+      <section class="gallery-section" id="gallery" aria-label="瀑布流图库">
+        <div class="gallery-sticky-nav" id="gallery-sticky-nav">
+          <div class="gallery-nav-inner">
+            <a class="gallery-wordmark" href="#gallery" aria-label="返回图库顶部">
+              <span></span>VISUAL ARCHIVE
+            </a>
+            <nav class="gallery-categories" id="gallery-categories" aria-label="图库分类"></nav>
+</div>
+        </div>
+
+        <div class="gallery-intro">
+          <p>PINNED COLLECTION</p>
+          <h2>Visual Archive</h2>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <p class="gallery-empty" id="gallery-empty" hidden>此分类暂时没有图片</p>
+</section>
+    </main>
+
+    <footer class="contact-footer" id="contact" aria-labelledby="footer-brand-name">
+      <div class="footer-card">
+        <div class="footer-background" aria-hidden="true"></div>
+<div class="footer-content">
+          <div class="footer-grid">
+            <section class="footer-brand-block">
+              <div class="footer-brand-lockup">
+                <span class="footer-brand-symbol" id="footer-brand-symbol" aria-hidden="true">♥</span>
+                <h2 id="footer-brand-name">Nur/ui</h2>
+              </div>
+              <p id="footer-brand-description">Nur UI is a modern React and Next.js based UI component library.</p>
+            </section>
+
+            <section class="footer-link-section">
+              <h3 id="footer-column-0-title">About Us</h3>
+              <ul id="footer-column-0-links"></ul>
+            </section>
+
+            <section class="footer-link-section">
+              <h3 id="footer-column-1-title">Helpful Links</h3>
+              <ul id="footer-column-1-links"></ul>
+            </section>
+
+            <section class="footer-contact-section">
+              <h3 id="footer-contact-title">Contact Us</h3>
+              <ul id="footer-contact-list"></ul>
+            </section>
+          </div>
+
+          <hr class="footer-rule" />
+
+          <div class="footer-hover-stage" id="footer-hover-stage" aria-label="动态品牌文字">
+            <svg id="footer-hover-svg" viewBox="0 0 300 100" role="img" aria-labelledby="footer-hover-svg-title">
+              <title id="footer-hover-svg-title">Nurui</title>
+              <defs>
+                <linearGradient id="footer-text-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#eab308" />
+                  <stop offset="25%" stop-color="#ef4444" />
+                  <stop offset="50%" stop-color="#80eeb4" />
+                  <stop offset="75%" stop-color="#06b6d4" />
+                  <stop offset="100%" stop-color="#8b5cf6" />
+                </linearGradient>
+                <radialGradient id="footer-reveal-gradient" cx="50%" cy="50%" r="22%">
+                  <stop offset="0%" stop-color="white" />
+                  <stop offset="100%" stop-color="black" />
+                </radialGradient>
+                <mask id="footer-text-mask">
+                  <rect width="100%" height="100%" fill="url(#footer-reveal-gradient)" />
+                </mask>
+              </defs>
+              <text class="footer-hover-ghost" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Nurui</text>
+              <text class="footer-hover-outline" id="footer-hover-outline" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Nurui</text>
+              <text class="footer-hover-reveal" id="footer-hover-reveal" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" mask="url(#footer-text-mask)">Nurui</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+</footer>
+
+    <div class="pdf-viewer" id="pdf-viewer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pdf-viewer-title">
+      <div class="pdf-viewer-dialog">
+        <header class="pdf-viewer-header">
+          <div>
+            <p>PDF PREVIEW</p>
+            <h2 id="pdf-viewer-title">PDF 作品集</h2>
+          </div>
+          <div class="pdf-viewer-actions">
+            <a class="pdf-download-button" id="pdf-download" href="#" download hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16" /></svg>
+              <span>下载 PDF</span>
+            </a>
+            <button class="pdf-viewer-close" id="pdf-viewer-close" type="button" aria-label="关闭 PDF 预览">×</button>
+          </div>
+        </header>
+        <div class="pdf-viewer-body">
+          <iframe id="pdf-viewer-frame" title="PDF 文件预览" hidden></iframe>
+          <div class="pdf-viewer-empty" id="pdf-viewer-empty">
+            <strong>暂未上传 PDF</strong>
+            <span>当前没有可预览的 PDF。</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-viewer" id="gallery-viewer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="完整图片查看">
+      <button class="gallery-viewer-close" id="gallery-viewer-close" type="button" aria-label="关闭完整图片">×</button>
+      <div class="gallery-viewer-content">
+        <div class="gallery-viewer-viewport" id="gallery-viewer-viewport">
+          <img class="gallery-viewer-image" id="gallery-viewer-image" alt="" draggable="false" />
+        </div>
+        <div class="gallery-viewer-progress" id="gallery-viewer-progress" aria-hidden="true">
+          <span id="gallery-viewer-progress-thumb"></span>
+        </div>
+        <p class="gallery-viewer-title" id="gallery-viewer-title"></p>
+        <p class="gallery-viewer-hint">拖动或滚动浏览完整图片</p>
+      </div>
+    </div>
+  </body>
+</html>
